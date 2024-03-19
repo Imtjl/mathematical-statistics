@@ -37,31 +37,3 @@ plt.show()
 sns.boxplot(x='sex', y='bmi', hue='smoker', data=data)
 plt.title('Box plot of BMI by Sex and Smoking Status')
 plt.show()
-
-
-
-
-# # Расчет и вывод статистик для каждой комбинации пол-курение
-# mean_bmi_sm = smoking_men['bmi'].mean()
-# variance_bmi_sm = smoking_men['bmi'].var()
-# median_bmi_sm = smoking_men['bmi'].median()
-# quantile_35_bmi_sm = smoking_men['bmi'].quantile(0.6)
-#
-# # Шаги 4-6: Визуализация
-# # Эмпирическая функция распределения
-# plt.figure()
-# smoking_men['bmi'].hist(cumulative=True, density=True, bins=100, grid=False)
-# plt.title('Empirical Distribution Function for BMI (Smoking Men)')
-# plt.show()
-#
-# # Гистограмма
-# plt.figure()
-# smoking_men['bmi'].hist(bins=30, grid=False)
-# plt.title('Histogram for BMI (Smoking Men)')
-# plt.show()
-#
-# # Box-plot
-# plt.figure()
-# data.boxplot(column='bmi', by='smoker')
-# plt.title('Box plot for BMI by Smoking Status')
-# plt.show()
